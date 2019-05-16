@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Alexandr\Adapter\RandomUser;
+namespace Alexandr\RandomUser\Adapter;
 
 use Alexandr\RandomUser\RandomUserInterface;
 
@@ -23,9 +23,9 @@ class RandomMeUserAdapter implements RandomUserInterface
             try {
                 $json = @file_get_contents($this->url);
                 if ($json === false) {
-                    throw new Exception("Ошибка чтения!!!");
+                    throw new \Exception("Ошибка чтения!!!");
                 }
-            } catch (Exception $e) {
+            } catch (\Exception $e) {
                 echo 'ОШИБКА: ' . $e->getMessage();
             }
             $this->json = $json ?? '';

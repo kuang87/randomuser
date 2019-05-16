@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Alexandr\Adapter\RandomUser;
+namespace Alexandr\RandomUser\Adapter;
 
 use Alexandr\RandomUser\RandomUserInterface;
 use KielD01\RandomUser\RandomUser;
