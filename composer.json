@@ -1,0 +1,19 @@
+{
+    "name": "alexandr/randomuser",
+    "type": "library",
+    "description": "Random User generator",
+    "authors": [
+        {
+            "name": "Aleksandr",
+            "email": "kuang87@mail.ru"
+        }
+    ],
+    "require": {
+        "kield-01/random-user-php-sdk": "^1.0"
+    },
+     "autoload": {
+         "psr-4": {
+             "Alexandr\\RandomUser\\": "src"
+         }
+     }
+}
